@@ -4,7 +4,6 @@ import { fileURLToPath } from 'url'
 import express from 'express'
 import type { ViteDevServer } from 'vite'
 import crypto from 'crypto' // added for nonce
-import { useTSNoReload } from "@devwareng/vanilla-ts"
 // Constants
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const isDev = process.env.NODE_ENV !== 'production'
@@ -89,6 +88,5 @@ app.use('*all', async (req, res) => {
 
 // Start server
 app.listen(port, () => {
-  useTSNoReload()
   console.log(`✅ Server started at http://localhost:${port} (${isDev ? 'dev' : 'prod'})`)
 })
