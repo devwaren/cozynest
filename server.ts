@@ -34,9 +34,6 @@ if (!isDev) {
   });
 }
 
-
-
-
 // Dev server (Vite) or static file handler
 let vite: ViteDevServer | undefined
 
