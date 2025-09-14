@@ -1,4 +1,4 @@
-import { useTSCollection, useTSNoReload, useTSSelect } from '@devwareng/vanilla-ts';
+import { useTSCollection, useTSNoReload } from '@devwareng/vanilla-ts';
 import { Router } from "../routes/__root"
 import { Navbar } from "../components"
 
@@ -15,12 +15,8 @@ const useAppSettings = (DOM: HTMLElement) => {
     ]
     const components = [Navbar, Router]
 
-    const a = useTSSelect('a') as NodeListOf<HTMLAnchorElement> | null
 
-    a?.forEach((as) => as.addEventListener("click", (e) => {
-        e.preventDefault()
-        useTSNoReload()
-    }))
+    useTSNoReload()
 
     return useTSCollection(sections, DOM, components)
 
