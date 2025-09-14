@@ -1,5 +1,3 @@
-import { useTSLazy } from "@devwareng/vanilla-ts";
-
-const Navbar = useTSLazy(() => import("./Navbar"))
+import Navbar from './Navbar/index';
 
 export { Navbar }

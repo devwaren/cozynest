@@ -1,5 +1,5 @@
 
-import { html, useTSElements, useTSNoReload, useTSSSRHydration } from '@devwareng/vanilla-ts'
+import { html, useTSElements, useTSSSRHydration } from '@devwareng/vanilla-ts'
 import { useAppSettings, usePageTitle } from './hooks';
 
 export default function App(DOM?: HTMLElement) {
@@ -19,7 +19,6 @@ export default function App(DOM?: HTMLElement) {
         `
     );
 
-    useTSNoReload()
     useAppSettings(isDOM)
     return ui
 }
