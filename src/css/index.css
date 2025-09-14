@@ -1,0 +1,170 @@
+@import "tailwindcss";
+
+
+/* --- Custom Classes Using @apply --- */
+
+html {
+    @apply scroll-smooth
+}
+
+ion-icon {
+    --ionicon-stroke-width: 50px
+}
+
+.bg-licorice {
+    @apply bg-[color:#281811ff];
+}
+
+.bg-caf-noir {
+    @apply bg-[color:#4f3120ff];
+}
+
+.bg-butterscotch {
+    @apply bg-[color:#d89245];
+}
+
+.bg-butterscotch-light {
+    @apply bg-[color:#dd9d4cff];
+}
+
+.bg-papaya-whip {
+    @apply bg-[color:#fff3dcff];
+}
+
+.bg-alabaster {
+    @apply bg-[color:#f2efe3ff];
+}
+
+.bg-eerie-black {
+    @apply bg-[color:#242424ff];
+}
+
+.bg-jet {
+    @apply bg-[color:#333333ff];
+}
+
+.bg-amber-alpha {
+    @apply bg-[color:#fef3c717];
+}
+
+.bg-red {
+    @apply bg-[color:#ff1b1b];
+}
+
+.text-licorice {
+    @apply text-[color:#281811ff];
+}
+
+.text-caf-noir {
+    @apply text-[color:#4f3120ff];
+}
+
+.text-butterscotch {
+    @apply text-[color:#d89245];
+}
+
+.text-butterscotch-light {
+    @apply text-[color:#dd9d4cff];
+}
+
+.text-papaya-whip {
+    @apply text-[color:#fff3dcff];
+}
+
+.text-alabaster {
+    @apply text-[color:#f2efe3ff];
+}
+
+.text-eerie-black {
+    @apply text-[color:#242424ff];
+}
+
+.text-jet {
+    @apply text-[color:#333333ff];
+}
+
+.text-amber-alpha {
+    @apply text-[color:#fef3c717];
+}
+
+.text-red {
+    @apply text-[color:#ff1b1b];
+}
+
+/* Shadows */
+.shadow-dark {
+    @apply shadow-[0_0_35px_0_#281811ff];
+}
+
+/* Fonts */
+.font-primary {
+    @apply font-serif;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.font-secondary {
+    @apply font-sans;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Transitions */
+.transition-inExpo {
+    @apply transition-all duration-500;
+    transition-timing-function: cubic-bezier(0.22, 0.37, 1, 1);
+}
+
+/* Keyframes & Animations */
+@keyframes fadeInDown {
+    0% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes bouncing {
+
+    0%,
+    100% {
+        transform: translateY(-25%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeInDown {
+    animation: fadeInDown 500ms cubic-bezier(0.22, 0.37, 1, 1) 1 forwards;
+}
+
+.animate-bouncing {
+    animation: bouncing 12s linear infinite;
+}
+
+/* Optional: custom breakpoints for media queries */
+@media (min-width: 480px) {
+    /* xs */
+}
+
+@media (min-width: 635px) {
+    /* sm */
+}
+
+@media (min-width: 1000px) {
+    /* md */
+}
+
+@media (min-width: 1200px) {
+    /* lg */
+}
+
+@media (min-width: 1400px) {
+    /* xl */
+}
+
+@media (min-width: 1600px) {
+    /* xxl */
+}

@@ -1,0 +1,13 @@
+# Allow all crawlers full access (default)
+User-agent: *
+Disallow: /api/
+Disallow: /private/
+Disallow: /temp/
+Disallow: /admin/
+Disallow: /*.pdf$
+Disallow: /*.zip$
+Allow: /
+
+# Explicitly allow Googlebot to access additional path
+User-agent: Googlebot
+Allow: /public-content/
